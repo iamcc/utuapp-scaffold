@@ -2,7 +2,7 @@
 * @Author: CC
 * @Date:   2015-12-29 12:25:10
 * @Last Modified by:   CC
-* @Last Modified time: 2015-12-29 13:48:01
+* @Last Modified time: 2015-12-29 13:59:04
 */
 
 'use strict';
@@ -37,6 +37,6 @@ module.exports = {
 };
 
 if (__DEV__) {
-  module.exports.devtool = 'eval';
+  module.exports.devtool = 'inline-source-map';
   module.exports.plugins.push(new webpack.HotModuleReplacementPlugin());
 }

@@ -11,6 +11,10 @@
 ```
 	npm start
 ```
+## 格式化
+```
+    npm run format
+```
 ## 发布
 ```
 	npm run release

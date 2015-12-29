@@ -2,7 +2,7 @@
 * @Author: CC
 * @Date:   2015-12-29 12:38:05
 * @Last Modified by:   CC
-* @Last Modified time: 2015-12-29 17:16:31
+* @Last Modified time: 2015-12-29 18:22:42
 */
 
 'use strict';
@@ -24,7 +24,7 @@ const indexDebug = debug('app:index');
 const rootEl = document.getElementById('app');
 
 if (process.env.NODE_ENV !== 'production') {
-  debug.enable('app:*');
+    debug.enable('app:*');
 }
 
 const store = configureStore(window.__INITIAL_STATE__);
@@ -34,8 +34,8 @@ syncReduxAndRouter(history, store);
 indexDebug('sync redux and router!');
 
 render(
-  <Provider store={store}>
-    <Router routes={routes} history={history} />
-  </Provider>,
-  rootEl
+    <Provider store={store}>
+        <Router routes={routes} history={history} />
+    </Provider>,
+    rootEl
 );

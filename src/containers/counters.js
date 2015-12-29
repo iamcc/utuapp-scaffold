@@ -2,7 +2,7 @@
 * @Author: CC
 * @Date:   2015-12-29 16:46:58
 * @Last Modified by:   CC
-* @Last Modified time: 2015-12-29 17:57:22
+* @Last Modified time: 2015-12-29 18:21:39
 */
 
 'use strict';
@@ -14,17 +14,17 @@ import Counter from '../components/counter';
 import * as CounterActions from '../actions/counter';
 
 class Counters extends React.Component {
-  constructor(props) {
-    super(props);
-    this.displayName = 'Counters';
-  }
+    constructor(props) {
+        super(props);
+        this.displayName = 'Counters';
+    }
 
-  render() {
-    return <Counter {...this.props}/>;
-  }
+    render() {
+        return <Counter {...this.props}/>;
+    }
 }
 
 export default connect(
-  state => ({counter: state.counter}),
-  dispatch => { return bindActionCreators(CounterActions, dispatch) }
+    state => ({counter: state.counter}),
+    dispatch => { return bindActionCreators(CounterActions, dispatch) }
 )(Counters);

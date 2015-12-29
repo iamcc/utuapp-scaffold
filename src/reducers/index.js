@@ -2,7 +2,7 @@
 * @Author: CC
 * @Date:   2015-12-29 14:25:18
 * @Last Modified by:   CC
-* @Last Modified time: 2015-12-29 17:26:16
+* @Last Modified time: 2015-12-29 18:22:17
 */
 
 'use strict';
@@ -12,8 +12,8 @@ import { routeReducer } from 'redux-simple-router';
 import counter from './counter';
 
 const rootReducer = combineReducers({
-  routing: routeReducer,
-  counter,
+    routing: routeReducer,
+    counter,
 });
 
 export default rootReducer;

@@ -2,12 +2,13 @@
 * @Author: CC
 * @Date:   2015-12-29 14:17:40
 * @Last Modified by:   CC
-* @Last Modified time: 2015-12-29 15:13:14
+* @Last Modified time: 2015-12-29 17:27:23
 */
 
 'use strict';
 
 import React from 'react';
+import { Link } from 'react-router';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,7 +17,22 @@ class App extends React.Component {
   }
 
   render() {
-    return <div>App</div>;
+    return (
+      <div>
+        <h1>Demo</h1>
+        <section>
+          <Link to='/home'>Home</Link>
+          { ' - ' }
+          <Link to='/about'>About</Link>
+          { ' - ' }
+          <Link to='/counters'>Counters</Link>
+        </section>
+        <br/>
+        <section>
+          {this.props.children}
+        </section>
+      </div>
+    );
   }
 }
 

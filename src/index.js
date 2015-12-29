@@ -2,7 +2,7 @@
 * @Author: CC
 * @Date:   2015-12-29 12:38:05
 * @Last Modified by:   CC
-* @Last Modified time: 2015-12-29 15:35:52
+* @Last Modified time: 2015-12-29 17:16:31
 */
 
 'use strict';
@@ -14,9 +14,8 @@ import { Provider } from 'react-redux';
 import { Router } from 'react-router';
 import { syncReduxAndRouter } from 'redux-simple-router';
 import debug from 'debug';
-import createHistory from 'history/lib/createBrowserHistory';
+import createHistory from 'history/lib/createHashHistory';
 import configureStore from './store/configureStore';
-import { App } from './containers/app';
 import routes from './routes';
 
 window.React = React;
